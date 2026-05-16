@@ -746,77 +746,109 @@ TELA INICIAL CHAMPIONS
 
 </main>
 
-</body>
-</html>
-
 <script>
+
+
+
 const pessoas = [
-  {id:"41", parent:null, cargo:"Diretor", nome:"Mickey Mouse", funcao:"Diretor de Supply Chain", setor:"Supply Chain", img:"Imagens/personagens/mickey_mouse.png", linkedin:""},
+  {id:"41", parent:null, cargo:"HEAD", nome:"Colaborador 1", funcao:"HEAD de Supply Chain", setor:"HEAD GERAL", img:"Imagens/personagens/mickey_mouse.png", linkedin:""},
 
-  {id:"1", parent:"41", cargo:"Gerente Operações/CS", nome:"Minnie Mouse", funcao:"Gerente de Operações/CS", setor:"Operações & CS", img:"Imagens/personagens/minnie_mouse.png", linkedin:""},
-  {id:"2", parent:"41", cargo:"Gerente Transportes", nome:"Donald Duck", funcao:"Gerente de Transportes", setor:"Transportes", img:"Imagens/personagens/donald_duck.png", linkedin:""},
-  {id:"3", parent:"41", cargo:"Gerente Planejamento", nome:"Goofy", funcao:"Gerente de Planejamento", setor:"Planejamento", img:"Imagens/personagens/goofy.png", linkedin:""},
-  {id:"4", parent:"41", cargo:"Gerente Suprimentos", nome:"Daisy Duck", funcao:"Gerente de Suprimentos", setor:"Compras", img:"Imagens/personagens/daisy_duck.png", linkedin:""},
-  {id:"5S", parent:"41", cargo:"Supervisor", nome:"Pluto", funcao:"Suporte de Melhorias", setor:"Suporte", img:"Imagens/personagens/pluto.png", linkedin:""},
+  {id:"1", parent:"41", cargo:"Coordenador", nome:"Colaborador 2", funcao:"Gerente de Setor 1", setor:"Setor 1", img:"Imagens/personagens/minnie_mouse.png", linkedin:""},
+  {id:"2", parent:"41", cargo:"Coordenador", nome:"Colaborador 3", funcao:"Gerente de Setor 2", setor:"Setor 2", img:"Imagens/personagens/donald_duck.png", linkedin:""},
+  {id:"3", parent:"41", cargo:"Coordenador", nome:"Colaborador 4", funcao:"Gerente de Setor 3", setor:"Setor 3", img:"Imagens/personagens/goofy.png", linkedin:""},
+  {id:"4", parent:"41", cargo:"Coordenador", nome:"Colaborador 5", funcao:"Gerente de Setor 4", setor:"Setor 4", img:"Imagens/personagens/daisy_duck.png", linkedin:""},
+  {id:"55", parent:"41", cargo:"Coordenador", nome:"Colaborador 6", funcao:"Suporte de Setor 5", setor:"Setor 5", img:"Imagens/personagens/pluto.png", linkedin:""},
 
-  {id:"5", parent:"1", cargo:"Supervisor", nome:"Simba", funcao:"Supervisão das Operações CD JDI", setor:"Operações & CS", img:"Imagens/personagens/simba.png", linkedin:""},
-  {id:"43", parent:"1", cargo:"Supervisor", nome:"Nala", funcao:"Supervisão das Operações CD JDI", setor:"Operações & CS", img:"Imagens/personagens/nala.png", linkedin:""},
-  {id:"11", parent:"1", cargo:"Supervisor", nome:"Timon", funcao:"Supervisão das Operações CD JDI", setor:"Operações & CS", img:"Imagens/personagens/timon.png", linkedin:""},
 
-  {id:"9", parent:"1", cargo:"Analista", nome:"Pumbaa", funcao:"Assistente de Faturamento", setor:"Operações & CS", img:"Imagens/personagens/pumbaa.png", linkedin:""},
-  {id:"10", parent:"1", cargo:"Especialista", nome:"Elsa", funcao:"Especialista de Faturamento", setor:"Operações & CS", img:"Imagens/personagens/elsa.png", linkedin:""},
-  {id:"12", parent:"1", cargo:"Analista", nome:"Anna", funcao:"Analista de Customer Service", setor:"Operações & CS", img:"Imagens/personagens/anna.png", linkedin:""},
-  {id:"13", parent:"1", cargo:"Especialista", nome:"Olaf", funcao:"Especialista de Faturamento", setor:"Operações & CS", img:"Imagens/personagens/olaf.png", linkedin:""},
-  {id:"14", parent:"1", cargo:"Analista", nome:"Kristoff", funcao:"Analista de Customer Service", setor:"Operações & CS", img:"Imagens/personagens/kristoff.png", linkedin:""},
-  {id:"45", parent:"1", cargo:"Analista", nome:"Moana", funcao:"Analista de Customer Service", setor:"Operações & CS", img:"Imagens/personagens/moana.png", linkedin:""},
-  {id:"46", parent:"1", cargo:"Especialista", nome:"Maui", funcao:"Especialista de Customer Service", setor:"Operações & CS", img:"Imagens/personagens/maui.png", linkedin:""},
-  {id:"47", parent:"1", cargo:"Analista", nome:"Ariel", funcao:"Analista de Customer Service", setor:"Operações & CS", img:"Imagens/personagens/ariel.png", linkedin:""},
 
-  {id:"8", parent:"5", cargo:"Analista", nome:"Flounder", funcao:"Analista de Estoque", setor:"Operações & CS", img:"Imagens/personagens/flounder.png", linkedin:""},
-  {id:"30", parent:"5", cargo:"Conferentes", nome:"Sebastian", funcao:"Analista de Estoque", setor:"Operações & CS", img:"Imagens/personagens/sebastian.png", linkedin:""},
-  {id:"35", parent:"5", cargo:"Conferentes", nome:"Belle", funcao:"Assistente de Estoque/Devoluções", setor:"Operações & CS", img:"Imagens/personagens/belle.png", linkedin:""},
+  {id:"5", parent:"1", cargo:"Supervisor", nome:"Colaborador 7", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/simba.png", linkedin:""},
+  {id:"43", parent:"1", cargo:"Supervisor", nome:"Colaborador 8", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/nala.png", linkedin:""},
+  {id:"11", parent:"1", cargo:"Supervisor", nome:"Colaborador 9", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/timon.png", linkedin:""},
 
-  {id:"36", parent:"11", cargo:"Especialista", nome:"Beast", funcao:"Especialista", setor:"Operações & CS", img:"Imagens/personagens/beast.png", linkedin:""},
-  {id:"42", parent:"11", cargo:"Analista", nome:"Lumière", funcao:"CAnalista", setor:"Operações & CS", img:"Imagens/personagens/lumiere.png", linkedin:""},
+  {id:"9", parent:"1", cargo:"Especialista", nome:"Colaborador 10", funcao:"Especialista ", setor:"Setor 1", img:"Imagens/personagens/pumbaa.png", linkedin:""},
+  {id:"10", parent:"1", cargo:"Especialista", nome:"Colaborador 11", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/elsa.png", linkedin:""},
+  {id:"12", parent:"1", cargo:"Especialista", nome:"Colaborador 12", funcao:"Especialista de ", setor:"Setor 1", img:"Imagens/personagens/anna.png", linkedin:""},
+  {id:"13", parent:"1", cargo:"Especialista", nome:"Colaborador 13", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/olaf.png", linkedin:""},
+  {id:"14", parent:"1", cargo:"Especialista", nome:"Colaborador 14", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/kristoff.png", linkedin:""},
+  {id:"45", parent:"1", cargo:"Especialista", nome:"Colaborador 15", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/moana.png", linkedin:""},
+  {id:"46", parent:"1", cargo:"Especialista", nome:"Colaborador 16", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/maui.png", linkedin:""},
+  {id:"47", parent:"1", cargo:"Especialista", nome:"Colaborador 17", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/ariel.png", linkedin:""},
 
-  {id:"7", parent:"43", cargo:"Analista", nome:"Cogsworth", funcao:"Analista", setor:"Operações & CS", img:"Imagens/personagens/cogsworth.png", linkedin:""},
-  {id:"15", parent:"43", cargo:"Analista", nome:"Aladdin", funcao:"Analista", setor:"Operações & CS", img:"Imagens/personagens/aladdin.png", linkedin:""},
-  {id:"31", parent:"43", cargo:"Especialista", nome:"Jasmine", funcao:"Especialista", setor:"Operações & CS", img:"Imagens/personagens/jasmine.png", linkedin:""},
-  {id:"32", parent:"43", cargo:"Analista", nome:"Genie", funcao:"Analista", setor:"Operações & CS", img:"Imagens/personagens/genie.png", linkedin:""},
-  {id:"33", parent:"43", cargo:"Especialista", nome:"Abu", funcao:"Especialista", setor:"Operações & CS", img:"Imagens/personagens/abu.png", linkedin:""},
-  {id:"34", parent:"43", cargo:"Analista", nome:"Woody", funcao:"Analista", setor:"Operações & CS", img:"Imagens/personagens/woody.png", linkedin:""},
+  {id:"8", parent:"5", cargo:"Especialista", nome:"Colaborador 18", funcao:"Especialista ", setor:"Setor 1", img:"Imagens/personagens/flounder.png", linkedin:""},
+  {id:"30", parent:"5", cargo:"Especialista", nome:"Colaborador 19", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/sebastian.png", linkedin:""},
+  {id:"35", parent:"5", cargo:"Especialista", nome:"Colaborador 20", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/belle.png", linkedin:""},
 
-  {id:"6", parent:"2", cargo:"Supervisor", nome:"Buzz Lightyear", funcao:"Supervisor de Monitoramento de Entregas", setor:"Transportes", img:"Imagens/personagens/buzz_lightyear.png", linkedin:""},
-  {id:"20", parent:"2", cargo:"Analista", nome:"Jessie", funcao:"Analista de Gestão de Fretes", setor:"Transportes", img:"Imagens/personagens/jessie.png", linkedin:""},
-  {id:"21", parent:"2", cargo:"Analista", nome:"Bo Peep", funcao:"Assistente de Gestão de Fretes", setor:"Transportes", img:"Imagens/personagens/bo_peep.png", linkedin:""},
-  {id:"22", parent:"2", cargo:"Analista", nome:"Rex", funcao:"Assistente de Gestão de Fretes", setor:"Transportes", img:"Imagens/personagens/rex.png", linkedin:""},
-  {id:"23", parent:"2", cargo:"Analista", nome:"Sully", funcao:"Analista de Roteirização", setor:"Transportes", img:"Imagens/personagens/sully.png", linkedin:""},
-  {id:"24", parent:"2", cargo:"Analista", nome:"Mike Wazowski", funcao:"Assistente de Roteirização", setor:"Transportes", img:"Imagens/personagens/mike_wazowski.png", linkedin:""},
-  {id:"51", parent:"2", cargo:"Analista", nome:"Boo", funcao:"Analista de Roteirização", setor:"Transportes", img:"Imagens/personagens/boo.png", linkedin:""},
+  {id:"36", parent:"11", cargo:"Especialista", nome:"Colaborador 21", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/beast.png", linkedin:""},
+  {id:"42", parent:"11", cargo:"Analista", nome:"Colaborador 22", funcao:"CAnalista", setor:"Setor 1", img:"Imagens/personagens/lumiere.png", linkedin:""},
+
+  {id:"7", parent:"43", cargo:"Especialista", nome:"Colaborador 23", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/cogsworth.png", linkedin:""},
+  {id:"15", parent:"43", cargo:"Analista", nome:"Colaborador 24", funcao:"Analista", setor:"Setor 1", img:"Imagens/personagens/aladdin.png", linkedin:""},
+  {id:"31", parent:"43", cargo:"Especialista", nome:"Colaborador 25", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/jasmine.png", linkedin:""},
+  {id:"32", parent:"43", cargo:"Analista", nome:"Colaborador 26", funcao:"Analista", setor:"Setor 1", img:"Imagens/personagens/genie.png", linkedin:""},
+  {id:"33", parent:"43", cargo:"Especialista", nome:"Colaborador 27", funcao:"Especialista", setor:"Setor 1", img:"Imagens/personagens/abu.png", linkedin:""},
+  {id:"34", parent:"43", cargo:"Analista", nome:"Colaborador 28", funcao:"Analista", setor:"Setor 1", img:"Imagens/personagens/woody.png", linkedin:""},
+
+  {id:"6", parent:"2", cargo:"Supervisor", nome:"Colaborador 29", funcao:"Supervisor", setor:"Setor 2", img:"Imagens/personagens/buzz_lightyear.png", linkedin:""},
+  {id:"20", parent:"2", cargo:"Analista", nome:"Colaborador 30", funcao:"Analista", setor:"Setor 2", img:"Imagens/personagens/jessie.png", linkedin:""},
+  {id:"21", parent:"2", cargo:"Analista", nome:"Colaborador 31", funcao:"Analista ", setor:"Setor 2", img:"Imagens/personagens/bo_peep.png", linkedin:""},
+  {id:"22", parent:"2", cargo:"Analista", nome:"Colaborador 32", funcao:"Assistente", setor:"Setor 2", img:"Imagens/personagens/rex.png", linkedin:""},
+  {id:"23", parent:"2", cargo:"Analista", nome:"Colaborador 33", funcao:"Analista", setor:"Setor 2", img:"Imagens/personagens/sully.png", linkedin:""},
+  {id:"24", parent:"2", cargo:"Analista", nome:"Colaborador 34", funcao:"Analista", setor:"Setor 2", img:"Imagens/personagens/mike_wazowski.png", linkedin:""},
+  {id:"51", parent:"2", cargo:"Analista", nome:"Colaborador 35", funcao:"Analista", setor:"Setor 2", img:"Imagens/personagens/boo.png", linkedin:""},
 
 
   
-  {id:"50", parent:"6", cargo:"Analista", nome:"Dory", funcao:"Assistente de Monitoramento", setor:"Transportes", img:"Imagens/personagens/dory.png", linkedin:""},
-  {id:"37", parent:"6", cargo:"Especialista", nome:"Nemo", funcao:"Especialista de Monitoramento", setor:"Transportes", img:"Imagens/personagens/nemo.png", linkedin:""},
-  {id:"38", parent:"6", cargo:"Especialista", nome:"Marlin", funcao:"Especialista de Monitoramento", setor:"Transportes", img:"Imagens/personagens/marlin.png", linkedin:""},
-  {id:"39", parent:"6", cargo:"Analista", nome:"Remy", funcao:"Assistente de Monitoramento", setor:"Transportes", img:"Imagens/personagens/remy.png", linkedin:""},
-  {id:"40", parent:"6", cargo:"Especialista", nome:"Linguini", funcao:"Especialista de Monitoramento", setor:"Transportes", img:"Imagens/personagens/linguini.png", linkedin:""},
+  {id:"50", parent:"6", cargo:"Analista", nome:"Colaborador 36", funcao:"Analista", setor:"Setor 2", img:"Imagens/personagens/dory.png", linkedin:""},
+  {id:"37", parent:"6", cargo:"Especialista", nome:"Colaborador 37", funcao:"Especialista", setor:"Setor 2", img:"Imagens/personagens/nemo.png", linkedin:""},
+  {id:"38", parent:"6", cargo:"Especialista", nome:"Colaborador 38", funcao:"Especialista", setor:"Setor 2", img:"Imagens/personagens/marlin.png", linkedin:""},
+  {id:"39", parent:"6", cargo:"Analista", nome:"Colaborador 39", funcao:"Analista", setor:"Setor 2", img:"Imagens/personagens/remy.png", linkedin:""},
+  {id:"40", parent:"6", cargo:"Especialista", nome:"Colaborador 40", funcao:"Especialista", setor:"Setor 2", img:"Imagens/personagens/linguini.png", linkedin:""},
 
-  {id:"16", parent:"3", cargo:"Supervisor", nome:"Wall-E", funcao:"Supervisão de DRP", setor:"Planejamento", img:"Imagens/personagens/wall_e.png", linkedin:""},
-  {id:"17", parent:"16", cargo:"Analista", nome:"Eve", funcao:"Analista de DRP", setor:"Planejamento", img:"Imagens/personagens/eve.png", linkedin:""},
-  {id:"18", parent:"3", cargo:"Analista", nome:"Merida", funcao:"Analista de PCP", setor:"Planejamento", img:"Imagens/personagens/merida.png", linkedin:""},
-  {id:"19", parent:"3", cargo:"Analista", nome:"Rapunzel", funcao:"Analista de PCP", setor:"Planejamento", img:"Imagens/personagens/rapunzel.png", linkedin:""},
-  {id:"44", parent:"3", cargo:"Analista", nome:"Flynn Rider", funcao:"Analista de PCP", setor:"Planejamento", img:"Imagens/personagens/flynn_rider.png", linkedin:""},
-  {id:"49", parent:"16", cargo:"Analista", nome:"Tiana", funcao:"Analista de PCP", setor:"Planejamento", img:"Imagens/personagens/tiana.png", linkedin:""},
+  {id:"16", parent:"3", cargo:"Supervisor", nome:"Colaborador 41", funcao:"Supervisão", setor:"Setor 3", img:"Imagens/personagens/wall_e.png", linkedin:""},
+  {id:"17", parent:"16", cargo:"Analista", nome:"Colaborador 42", funcao:"Analista", setor:"Setor 3", img:"Imagens/personagens/eve.png", linkedin:""},
+  {id:"18", parent:"3", cargo:"Analista", nome:"Colaborador 43", funcao:"Analista", setor:"Setor 3", img:"Imagens/personagens/merida.png", linkedin:""},
+  {id:"19", parent:"3", cargo:"Analista", nome:"Colaborador 44", funcao:"Analista", setor:"Setor 3", img:"Imagens/personagens/rapunzel.png", linkedin:""},
+  {id:"44", parent:"3", cargo:"Analista", nome:"Colaborador 45", funcao:"Analista", setor:"Setor 3", img:"Imagens/personagens/flynn_rider.png", linkedin:""},
+  {id:"49", parent:"16", cargo:"Analista", nome:"Colaborador 46", funcao:"Analista ", setor:"Setor 3", img:"Imagens/personagens/tiana.png", linkedin:""},
 
-  {id:"28", parent:"4", cargo:"Coordenador", nome:"Stitch", funcao:"Coordenador de Compras", setor:"Compras", img:"Imagens/personagens/stitch.png", linkedin:""},
-  {id:"25", parent:"4", cargo:"Analista", nome:"Lilo", funcao:"Analista de Suprimentos", setor:"Compras", img:"Imagens/personagens/lilo.png", linkedin:""},
-  {id:"26", parent:"4", cargo:"Especialista", nome:"Hercules", funcao:"Especialista de Suprimentos", setor:"Compras", img:"Imagens/personagens/hercules.png", linkedin:""},
-  {id:"27", parent:"4", cargo:"Analista", nome:"Megara", funcao:"Analista de Suprimentos", setor:"Compras", img:"Imagens/personagens/megara.png", linkedin:""},
-  {id:"45", parent:"4", cargo:"Especialista", nome:"Mulan", funcao:"Especialista de Suprimentos", setor:"Compras", img:"Imagens/personagens/mulan.png", linkedin:""},
-  {id:"52", parent:"4", cargo:"Especialista", nome:"Mushu", funcao:"Especialista de Suprimentos", setor:"Compras", img:"Imagens/personagens/mushu.png", linkedin:""},
-  {id:"48", parent:"4", cargo:"Jovem Aprendiz", nome:"Pocahontas", funcao:"Jovem Aprendiz Suprimentos", setor:"Compras", img:"Imagens/personagens/pocahontas.png", linkedin:""}
+  {id:"28", parent:"4", cargo:"Coordenador", nome:"Colaborador 47", funcao:"Coordenador de Setor 4", setor:"Setor 4", img:"Imagens/personagens/stitch.png", linkedin:""},
+  {id:"25", parent:"4", cargo:"Analista", nome:"Colaborador 48", funcao:"Analista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/lilo.png", linkedin:""},
+  {id:"26", parent:"4", cargo:"Especialista", nome:"Colaborador 49", funcao:"Especialista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/hercules.png", linkedin:""},
+  {id:"27", parent:"4", cargo:"Analista", nome:"Colaborador 50", funcao:"Analista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/megara.png", linkedin:""},
+  {id:"45", parent:"4", cargo:"Especialista", nome:"Colaborador 51", funcao:"Especialista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/mulan.png", linkedin:""},
+  {id:"52", parent:"4", cargo:"Especialista", nome:"Colaborador 52", funcao:"Especialista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/mushu.png", linkedin:""},
+  {id:"48", parent:"4", cargo:"Jovem Aprendiz", nome:"Colaborador 53", funcao:"Jovem Aprendiz Setor 4", setor:"Setor 4", img:"Imagens/personagens/pocahontas.png", linkedin:""},
+  {id:"200", parent:"1", cargo:"Analista", nome:"Colaborador 54", funcao:"Analista de Setor 1", setor:"Setor 1", img:"Imagens/personagens/stitch.png", linkedin:""},
+  {id:"201", parent:"1", cargo:"Especialista", nome:"Colaborador 55", funcao:"Especialista de Setor 1", setor:"Setor 1", img:"Imagens/personagens/elsa.png", linkedin:""},
+  {id:"202", parent:"1", cargo:"Analista", nome:"Colaborador 56", funcao:"Analista de Setor 1", setor:"Setor 1", img:"Imagens/personagens/genie.png", linkedin:""},
+  {id:"203", parent:"1", cargo:"Especialista", nome:"Colaborador 57", funcao:"Especialista de Setor 1", setor:"Setor 1", img:"Imagens/personagens/moana.png", linkedin:""},
+  {id:"204", parent:"1", cargo:"Analista", nome:"Colaborador 58", funcao:"Analista de Setor 1", setor:"Setor 1", img:"Imagens/personagens/mike_wazowski.png", linkedin:""},
+  {id:"205", parent:"2", cargo:"Analista", nome:"Colaborador 59", funcao:"Analista de Setor 2", setor:"Setor 2", img:"Imagens/personagens/stitch.png", linkedin:""},
+  {id:"206", parent:"2", cargo:"Especialista", nome:"Colaborador 60", funcao:"Especialista de Setor 2", setor:"Setor 2", img:"Imagens/personagens/elsa.png", linkedin:""},
+  {id:"207", parent:"2", cargo:"Analista", nome:"Colaborador 61", funcao:"Analista de Setor 2", setor:"Setor 2", img:"Imagens/personagens/genie.png", linkedin:""},
+  {id:"208", parent:"2", cargo:"Especialista", nome:"Colaborador 62", funcao:"Especialista de Setor 2", setor:"Setor 2", img:"Imagens/personagens/moana.png", linkedin:""},
+  {id:"209", parent:"2", cargo:"Analista", nome:"Colaborador 63", funcao:"Analista de Setor 2", setor:"Setor 2", img:"Imagens/personagens/mike_wazowski.png", linkedin:""},
+  {id:"210", parent:"3", cargo:"Analista", nome:"Colaborador 64", funcao:"Analista de Setor 3", setor:"Setor 3", img:"Imagens/personagens/stitch.png", linkedin:""},
+  {id:"211", parent:"3", cargo:"Especialista", nome:"Colaborador 65", funcao:"Especialista de Setor 3", setor:"Setor 3", img:"Imagens/personagens/elsa.png", linkedin:""},
+  {id:"212", parent:"3", cargo:"Analista", nome:"Colaborador 66", funcao:"Analista de Setor 3", setor:"Setor 3", img:"Imagens/personagens/genie.png", linkedin:""},
+  {id:"213", parent:"3", cargo:"Especialista", nome:"Colaborador 67", funcao:"Especialista de Setor 3", setor:"Setor 3", img:"Imagens/personagens/moana.png", linkedin:""},
+  {id:"214", parent:"3", cargo:"Analista", nome:"Colaborador 68", funcao:"Analista de Setor 3", setor:"Setor 3", img:"Imagens/personagens/mike_wazowski.png", linkedin:""},
+  {id:"215", parent:"4", cargo:"Analista", nome:"Colaborador 69", funcao:"Analista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/stitch.png", linkedin:""},
+  {id:"216", parent:"4", cargo:"Especialista", nome:"Colaborador 70", funcao:"Especialista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/elsa.png", linkedin:""},
+  {id:"217", parent:"4", cargo:"Analista", nome:"Colaborador 71", funcao:"Analista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/genie.png", linkedin:""},
+  {id:"218", parent:"4", cargo:"Especialista", nome:"Colaborador 72", funcao:"Especialista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/moana.png", linkedin:""},
+  {id:"219", parent:"4", cargo:"Analista", nome:"Colaborador 73", funcao:"Analista de Setor 4", setor:"Setor 4", img:"Imagens/personagens/mike_wazowski.png", linkedin:""},
+  {id:"220", parent:"55", cargo:"Analista", nome:"Colaborador 74", funcao:"Analista de Setor 5", setor:"Setor 5", img:"Imagens/personagens/stitch.png", linkedin:""},
+  {id:"221", parent:"55", cargo:"Especialista", nome:"Colaborador 75", funcao:"Especialista de Setor 5", setor:"Setor 5", img:"Imagens/personagens/elsa.png", linkedin:""},
+  {id:"222", parent:"55", cargo:"Analista", nome:"Colaborador 76", funcao:"Analista de Setor 5", setor:"Setor 5", img:"Imagens/personagens/genie.png", linkedin:""},
+  {id:"223", parent:"55", cargo:"Especialista", nome:"Colaborador 77", funcao:"Especialista de Setor 5", setor:"Setor 5", img:"Imagens/personagens/moana.png", linkedin:""},
+  {id:"224", parent:"55", cargo:"Analista", nome:"Colaborador 78", funcao:"Analista de Setor 5", setor:"Setor 5", img:"Imagens/personagens/mike_wazowski.png", linkedin:""}
 ];
+
+
+
+
+
 
 const tree = document.getElementById("tree");
 const cargosLideranca = ["Diretor","Gerente","Supervisor","Coordenador"];
@@ -838,11 +870,11 @@ function childrenOf(id){
 function getAreaClass(pessoa){
   const texto = `${pessoa.setor} ${pessoa.funcao}`.toLowerCase();
 
-  if(texto.includes("operações") || texto.includes("cs")) return "area-operacoes";
-  if(texto.includes("transportes")) return "area-transportes";
-  if(texto.includes("planejamento") || texto.includes("pcp") || texto.includes("drp")) return "area-planejamento";
-  if(texto.includes("compras")) return "area-compras";
-  if(texto.includes("suporte")) return "area-suporte";
+  if(texto.includes("setor 1")) return "area-operacoes";
+  if(texto.includes("setor 2")) return "area-transportes";
+  if(texto.includes("setor 3")) return "area-planejamento";
+  if(texto.includes("setor 4")) return "area-compras";
+  if(texto.includes("setor 5")) return "area-suporte";
 
   return "";
 }
@@ -857,7 +889,7 @@ function getResumoTimeDireto(pessoasDiretas){
     if(texto.includes("monitoramento")) return "Monitoramento";
     if(texto.includes("roteirização")) return "Roteirização";
     if(texto.includes("fretes")) return "Fretes";
-    if(texto.includes("compras")) return "Compras";
+    if(texto.includes("compras")) return "Setor 4";
     if(texto.includes("pcp")) return "PCP";
     if(texto.includes("drp")) return "DRP";
 
@@ -1126,3 +1158,6 @@ startExperience.addEventListener("click", () => {
 
 
 </script>
+</body>
+</html>
+
